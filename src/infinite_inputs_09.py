@@ -8,19 +8,18 @@ def cli():
 @cli.command(name="sum_infinite")
 def sum_infinite():
     num = click.prompt('Insert 1st number ', type=int)
-    angka = num
     total = int(num)
     i = 1
-    while num != '' and angka != '':
+    while num != '':
         i+=1
         ordinal = 'th'
         if i == 2:
             ordinal = 'nd'
         elif i == 3:
             ordinal = 'rd'
-        angka =  input(f"Insert {i}{ordinal} number: ")
-        if angka !='':
-            total += int(angka)
+        num =  input(f"Insert {i}{ordinal} number: ")
+        if num !='':
+            total += int(num)
         
     print("Result:",total)
 

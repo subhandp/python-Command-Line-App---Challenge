@@ -8,6 +8,7 @@ app.egg-info/requires.txt
 app.egg-info/top_level.txt
 src/__init__.py
 src/arithmetic_02.py
+src/crud_10.py
 src/infinite_inputs_09.py
 src/ip_private_07.py
 src/ip_public_08.py

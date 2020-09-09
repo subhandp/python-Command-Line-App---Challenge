@@ -4,17 +4,17 @@ import click
 def cli():
     pass
 @cli.command(name="lowercase")
-@click.argument("string",type=click.STRING)
+@click.argument("string",type=str)
 def lowercase(string):
     print(string.lower())
 
 @cli.command(name="uppercase")
-@click.argument("string",type=click.STRING)
+@click.argument("string",type=str)
 def uppercase(string):
     print(string.upper())
 
 @cli.command(name="capitalize")
-@click.argument("string",type=click.STRING)
+@click.argument("string",type=str)
 def capitalize(string):
     print(string.title())
 
